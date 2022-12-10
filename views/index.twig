@@ -7,8 +7,15 @@
     <title>Dragonball API PHP</title>
 </head>
 <body>
-    
-    <h1>Hola {{name}}</h1>
+
+    <h1> Haciendo pruebas con servicio web </h1>
+
+    <h3>{{ data.name }}</h3>
+
+    {% for character in data %}
+        <h4>{{ character.name }}</h4>
+    {% endfor %}
+
 
 
 
