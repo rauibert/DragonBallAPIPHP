@@ -1,1 +1,1 @@
-# DragonBallAPIPHP
+# RickMortyAPIPHP
