@@ -9,4 +9,10 @@ class DataController{
     return $data;
   }
 
+  static function loadCharacter($id){
+    $json = new Data;
+    $data = $json->getCharacterById($id);
+    return $data;
+  }
+
 }

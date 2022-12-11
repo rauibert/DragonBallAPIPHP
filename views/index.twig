@@ -12,11 +12,12 @@
     <h1> Personajes Rick y Morty</h1>
     <div class="container">
         {% for character in data %}
-            <div class="box">
-               <img src="{{ character.image }}" alt="">
+            <a href="http://rickmortyapiphp.ddev.site/{{ character.id }}">
+              <div class="box">
+                <img src="{{ character.image }}" alt="">
                 <p>{{ character.name }}</p>
-            </div>
-
+              </div>
+            </a>
         {% endfor %}
     </div>
 
