@@ -1,0 +1,33 @@
+
+.container{
+  border: 1px solid rgb(226, 243, 232);
+  border-radius: 2px;
+  padding: 20px;
+  display: flex; /*Colocará las cajas en horizontal*/
+  flex-flow: row wrap; /*flex-direction + flex-wrap*/
+  justify-content: center; /*Coloca los elementos centrados*/
+  width: 95%;
+  margin: 0 auto;
+}
+
+.box{
+  border: 1px solid rgb(159, 165, 161);
+  border-radius: 5px;
+  color: black;
+  width: 180px;
+  height: 240px;
+  text-align: center;
+  margin: 5px;
+}
+
+.box:hover{
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.box img{
+  width: 180px;
+  height: 180px;
+  border-radius: 5px 5px 0px 0px;
+}

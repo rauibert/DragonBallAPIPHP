@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dragonball API PHP</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Rick y Morty API PHP</title>
 </head>
 <body>
 
-    <h1> Haciendo pruebas con servicio web </h1>
+    <h1> Personajes Rick y Morty</h1>
+    <div class="container">
+        {% for character in data %}
+            <div class="box">
+               <img src="{{ character.image }}" alt="">
+                <p>{{ character.name }}</p>
+            </div>
 
-    <h3>{{ data.name }}</h3>
+        {% endfor %}
+    </div>
 
-    {% for character in data %}
-        <h4>{{ character.name }}</h4>
-    {% endfor %}
 
 
 
