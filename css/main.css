@@ -10,6 +10,15 @@
   margin: 0 auto;
 }
 
+.container_detail{
+  padding: 10px;
+  display: flex; /*Colocará las cajas en horizontal*/
+  flex-flow: row wrap; /*flex-direction + flex-wrap*/
+  justify-content: center; /*Coloca los elementos centrados*/
+  width: 95%;
+  margin: 0 auto;
+}
+
 .box{
   border: 1px solid rgb(159, 165, 161);
   border-radius: 5px;
@@ -30,4 +39,27 @@
   width: 180px;
   height: 180px;
   border-radius: 5px 5px 0px 0px;
+}
+
+.box_detail{
+  color: black;
+  width: 600px;
+  margin: 5px;
+}
+
+.box_detail img{
+  border: 1px solid grey;
+  width: 600px;
+  height: 600px;
+  border-radius: 5px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin: 0 auto;
+}
+
+.box_detail_data, .box_detail_episodes{
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  margin-bottom: 10px;
+  padding: 10px;
 }

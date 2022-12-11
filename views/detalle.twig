@@ -10,22 +10,27 @@
 <body>
 
     <h1> Personajes Rick y Morty - {{ character.name }} - {{ character.id }}</h1>
-    <div class="container">
-
-
+    <div class="container_detail">
       <div class="box_detail">
         <img src="{{ character.image }}" alt="">
-        <p>{{ character.name }}</p>
-        <p>{{ character.status }}</p>
-        <p>{{ character.species }}</p>
-        <p>
+      </div>
+
+      <div class="box_detail">
+
+        <div class="box_detail_data">
+          <label for="name">Nombre: </label>{{ character.name }}<br/>
+          <label for="status">Status: </label>{{ character.status }}<br/>
+          <label for="species">Especie: </label>{{ character.species }}<br/>
+        </div>
+
+        <div class="box_detail_episodes">
           Capitulos en los que aparece:
           <ul>
             {% for episode in character.episode %}
               <li>{{ episode }}</li>
             {% endfor %}
           </ul>
-        </p>
+        </div>
       </div>
 
 
