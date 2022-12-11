@@ -9,7 +9,16 @@
 </head>
 <body>
 
-    <h1> Personajes Rick y Morty</h1>
+    <div class="header">
+      <div class="title"><h1> Personajes Rick y Morty</h1></div>
+      <div class="modo_oscuro">
+        <label class="switch">
+        <input type="checkbox" name="checkbox">
+        <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
     <div class="container">
         {% for character in data %}
             <a href="http://rickmortyapiphp.ddev.site/index.php?id={{ character.id }}">
@@ -24,6 +33,6 @@
 
 
 
-
+  <script src="./js/main.js"></script>
 </body>
 </html>
